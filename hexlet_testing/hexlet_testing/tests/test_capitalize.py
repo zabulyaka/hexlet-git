@@ -2,11 +2,10 @@ from hexlet_testing.package_name.capitalize import capitalize
 
 
 def test_capitalize():
-    print('Начинаем тестирование')
-    if capitalize('hello') != 'Hello':
-        raise Exception('Функция работает неверно!')
+    print('Начинаем тестирование capitalize')
 
-    if capitalize('') != '':
-        raise Exception('Функция работает неверно!')
+    assert capitalize('hello') == 'Hello'
 
-    print('Все тесты пройдены!')
+    assert capitalize('') == ''
+
+    print('Тесты capitalize пройдены успешно!')
